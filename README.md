@@ -1,7 +1,7 @@
 # Moodio's DigitalOcean Kubernetes tasks
 
 ## Overview
-Moodio's DigitalOcean Kubernetes Tasks is a collection (currently just 1) of tasks for more easily using the Kubernetes service from DigitalOcean with Azure Devops.
+[Moodio's DigitalOcean Kubernetes Tasks](https://marketplace.visualstudio.com/items?itemName=Moodio.moodio-do-k8s-config) is a collection (currently just 1) of tasks for more easily using the Kubernetes service from DigitalOcean with Azure Devops. 
 
 ## Config Retriever Task
 The config retriever task is a task used to get the config.yaml file required to connect to a DigitalOcean Kubernetes cluster to be used in tasks further down the chain.
