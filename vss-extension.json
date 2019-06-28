@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "moodio-do-k8s-config",
     "name": "DigitalOcean Kubernetes Config tasks",
-    "version": "0.1.15",
+    "version": "0.1.16",
     "publisher": "moodio",
     "public": true,
     "targets": [
