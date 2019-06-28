@@ -1,0 +1,48 @@
+{
+    "manifestVersion": 1,
+    "id": "moodio-do-k8s-config",
+    "name": "DigitalOcean Kubernetes Config tasks",
+    "version": "0.1.15",
+    "publisher": "moodio",
+    "public": true,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Tools for retrieving Digital Ocean Kubernetes cluster config files within your Azure DevOps build and release pipelines",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "tags": [
+        "moodio",
+        "kubernetes",
+        "digitalocean",
+        "kubeconfig"
+    ],
+    "icons": {
+        "default": "images/icon.png"        
+    },
+    "content":{
+        "details":{
+            "path":"./README.md"
+        }
+    },
+    "files": [
+        {
+            "path": "doK8sTask"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "do-k8s-config",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "doK8sTask"
+            }
+        }
+    ]
+}

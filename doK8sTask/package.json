@@ -1,0 +1,32 @@
+{
+  "name": "azuredevops-do-k8sauth",
+  "version": "0.1.0",
+  "description": "Azure Devops task for authenticating to Digital Ocean Kubernetes clusters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mswehli/do-k8s.git"
+  },
+  "author": {
+    "name": "Mahmoud Swehli",
+    "email": "mahmoud@moodio.co.uk",
+    "url": "https://blog.moodio.co.uk"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mswehli/do-k8s/issues"
+  },
+  "homepage": "https://github.com/mswehli/do-k8s#readme",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^2.8.0",
+    "typed-rest-client": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^11.12.2",
+    "@types/q": "^1.5.2"
+  }
+}
