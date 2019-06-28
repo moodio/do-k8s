@@ -19,16 +19,16 @@ To use the task:
 ### Using with YAML based build definitions
 To use in a yaml based build definition, use the following definition, replacing in your own values and modify to your own needs. The below example however illustrates its usage for applying a YAML configuration file.
 
-`- task: DO-K8S-Auth@0
+```- task: DO-K8S-Auth@0
   inputs:
     pat: '<PersonalAccessToken>'
     clusterName: '<KubernetesClusterName>'
     configOutput: file
     outputFilePath: $(Build.Repository.LocalPath)
-    displayName: retrive access token`
+    displayName: retrive access token```
 
 To then use the configuration file within the Azure DevOps Kubernetes task, using the example of applying a YAML definition, use the below definition, replacing in your own values. For other commands type, modify as you see fit.
-`- task: Kubernetes@1
+```- task: Kubernetes@1
   inputs:
     connectionType: 'None'
     command: 'apply'
@@ -36,7 +36,7 @@ To then use the configuration file within the Azure DevOps Kubernetes task, usin
     configuration: '$(Build.Repository.LocalPath)/$(projectDirectory)/k8s-deployment.yaml'
     arguments: '--kubeconfig $(Build.Repository.LocalPath)/config.yaml'
     secretType: 'dockerRegistry'
-    containerRegistryType: 'Azure Container Registry'` 
+    containerRegistryType: 'Azure Container Registry'``` 
 
 ### Comments, Feedback and Requests
 If you have any comments, feedbacks or requests, please feel free to raise an issue in this repository. 
