@@ -9,12 +9,12 @@ The task can store the config.yaml in either a variable, or as a file in the wor
 
 ### How to use
 To use the task:
-	1. Login to DigitalOcean and create a personal access token. For details [visit the guide on the DigitalOcean website]('https://www.digitalocean.com/docs/api/create-personal-access-token/')
-	2. Add the task to your **Digital Ocean Kubernetes Config Retriever** to your pipeline.
-	3. Enter the Personal Access Token into the input field labelled Personal Access Token
-	4. Enter the name of the cluster as it appears in your DigitalOcean dashboard into the field labled **Cluster name**
-	5. Choose where to save the config. Please note saving to a variable is currently in beta and may or may not work for you. So you're better off picking a path instead.
-	6. Your done. Now simply point any tasks that require the **config.yaml** file to the directory you have chosen, the filename will be stored as **{path}/config.yaml**. For example, if you are using it in the Kubernetes task, add the argument **--kube-config {path}/config.yaml**
+1. Login to DigitalOcean and create a personal access token. For details [visit the guide on the DigitalOcean website]('https://www.digitalocean.com/docs/api/create-personal-access-token/')
+2. Add the task to your **Digital Ocean Kubernetes Config Retriever** to your pipeline.
+3. Enter the Personal Access Token into the input field labelled Personal Access Token
+4. Enter the name of the cluster as it appears in your DigitalOcean dashboard into the field labled **Cluster name**
+5. Choose where to save the config. Please note saving to a variable is currently in beta and may or may not work for you. So you're better off picking a path instead.
+6. Your done. Now simply point any tasks that require the **config.yaml** file to the directory you have chosen, the filename will be stored as **{path}/config.yaml**. For example, if you are using it in the Kubernetes task, add the argument **--kube-config {path}/config.yaml**
 
 ### Using with YAML based build definitions
 To use in a yaml based build definition, use the following definition, replacing in your own values and modify to your own needs. The below example however illustrates its usage for applying a YAML configuration file.
