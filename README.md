@@ -42,4 +42,4 @@ To then use the configuration file within the Azure DevOps Kubernetes task, usin
 ``` 
 
 ### Comments, Feedback and Requests
-If you have any comments, feedbacks or requests, please feel free to raise an issue in this repository. 
+If you have any comments, feedbacks or requests, please feel free to raise an issue in the [github repository](https://github.com/moodio/do-k8s). 
